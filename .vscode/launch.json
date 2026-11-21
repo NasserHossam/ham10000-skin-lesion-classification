@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Current script (fast, synthetic data)",
+      "type": "debugpy", "request": "launch", "program": "${file}", "console": "integratedTerminal",
+      "args": ["--data-dir", "${workspaceFolder}/data/synthetic", "--work-dir", "${workspaceFolder}/outputs_test",
+               "--results-dir", "${workspaceFolder}/outputs_test/results", "--figures-dir", "${workspaceFolder}/outputs_test/figures", "--fast"]
+    },
+    {
+      "name": "Current script (real data)",
+      "type": "debugpy", "request": "launch", "program": "${file}", "console": "integratedTerminal",
+      "args": ["--data-dir", "${workspaceFolder}/../Skin Cancer"]
+    },
+    {
+      "name": "Full pipeline (real data)",
+      "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/scripts/run_all.py", "console": "integratedTerminal",
+      "args": ["--data-dir", "${workspaceFolder}/../Skin Cancer"]
+    }
+  ]
+}

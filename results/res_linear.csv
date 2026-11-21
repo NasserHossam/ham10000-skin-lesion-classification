@@ -1,0 +1,5 @@
+Representation,Train acc,Test acc,Train macro-F1,Test macro-F1
+Raw (784 px),0.614,0.427,0.535,0.222
+PCA (50),0.376,0.368,0.265,0.241
+LDA (6),0.595,0.422,0.465,0.206
+SVD (50),0.372,0.354,0.262,0.238

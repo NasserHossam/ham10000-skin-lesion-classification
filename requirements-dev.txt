@@ -1,0 +1,6 @@
+-r requirements.txt
+pytest
+jupyter
+# Only for scripts/03_deep_learning.py (CPU build is enough to try it; an NVIDIA GPU is needed for speed):
+# torch
+# torchvision

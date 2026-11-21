@@ -1,0 +1,9 @@
+Method,Trustworthiness,Train macro-F1,Test macro-F1,Test acc
+Kernel PCA (RBF),0.807,0.22,0.224,0.323
+Isomap,0.896,0.212,0.208,0.293
+LLE,0.811,0.202,0.202,0.304
+UMAP,0.906,0.208,0.196,0.264
+t-SNE,0.951,,,
+SNE,0.9,,,
+Metric MDS,0.853,,,
+Non-metric MDS,0.854,,,
