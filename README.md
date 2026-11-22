@@ -1,7 +1,7 @@
 # Skin Lesion Classification on HAM10000
 
 Course project for **AID427 New Trends in Data Science**, Egypt-Japan University of Science and Technology (E-JUST).
-**Team:** Nasser Hossam Hamed (320230051) and Mariam Ahmed Shawky (320230056), Section 1.
+**Team:** Nasser Hossam Hamed (320230051), Mariam Ahmed Shawky (320230056) and Ammar Yasser (320230031), Section 1.
 
 Seven-class classification of dermoscopic skin lesions with classical machine learning: dimensionality reduction of raw pixels,
 47 interpretable features, filter / wrapper / embedded / metaheuristic feature selection, and a lesion-level evaluation protocol.
@@ -105,6 +105,7 @@ Use `--seeds 10` for the bonus experiments (the default is 5), and `--fast` for 
 
 Final model: accuracy 0.723, macro ROC-AUC 0.906, cross-validated macro-F1 0.509; melanoma recall is only **0.51**.
 Deep-learning reference (a different 70/15/15 split, so only indicative): ResNet18 0.515, image + metadata fusion 0.615.
+Two Random Forests are used on purpose: step 05 scores every feature subset with one lightly regularised forest (`min_samples_leaf=3`), while step 06 uses a more regularised one (`min_samples_leaf=5`, `max_depth=12`). So the same GA (21) set scores 0.438 in `res_selection.csv` and 0.464 in `res_final_models.csv`; compare numbers only within one table.
 Differences below about 0.03 macro-F1 are within noise, because the rare classes have only 20 to 60 test images.
 
 These numbers come from the Colab notebooks in `notebooks/`. The scripts implement the same pipeline; small differences in the third
