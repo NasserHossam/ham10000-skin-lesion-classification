@@ -1,7 +1,7 @@
 # Skin Lesion Classification on HAM10000
 
 Course project for **AID427 New Trends in Data Science**, Egypt-Japan University of Science and Technology (E-JUST).
-**Team:** Nasser Hossam Hamed (320230051), Mariam Ahmed Shawky (320230056) and Ammar Yasser (320230031), Section 1.
+**Team:** Nasser Hossam Hamed, Mariam Ahmed Shawky and Ammar Yasser, Section 1.
 
 Seven-class classification of dermoscopic skin lesions with classical machine learning: dimensionality reduction of raw pixels,
 47 interpretable features, filter / wrapper / embedded / metaheuristic feature selection, and a lesion-level evaluation protocol.
